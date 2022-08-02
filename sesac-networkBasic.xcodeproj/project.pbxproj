@@ -30,6 +30,7 @@
 		248B1D7728990B0600AF59F8 /* BeerListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248B1D7528990B0600AF59F8 /* BeerListTableViewCell.swift */; };
 		248B1D7828990B0600AF59F8 /* BeerListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248B1D7628990B0600AF59F8 /* BeerListTableViewCell.xib */; };
 		248B1D7B28990C0B00AF59F8 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248B1D7A28990C0B00AF59F8 /* Beer.swift */; };
+		248B1D7E289914EE00AF59F8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248B1D7D289914EE00AF59F8 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		248B1D7528990B0600AF59F8 /* BeerListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableViewCell.swift; sourceTree = "<group>"; };
 		248B1D7628990B0600AF59F8 /* BeerListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerListTableViewCell.xib; sourceTree = "<group>"; };
 		248B1D7A28990C0B00AF59F8 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		248B1D7D289914EE00AF59F8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		248B1D362897A26300AF59F8 /* sesac-networkBasic */ = {
 			isa = PBXGroup;
 			children = (
+				248B1D7C289914E500AF59F8 /* Constant */,
 				248B1D6F2899090600AF59F8 /* BeerList */,
 				248B1D692899082B00AF59F8 /* Translate */,
 				248B1D5C2898AC8200AF59F8 /* Movie */,
@@ -211,6 +214,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		248B1D7C289914E500AF59F8 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				248B1D7D289914EE00AF59F8 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,6 +319,7 @@
 				248B1D642898FC0E00AF59F8 /* SearchTableViewCell.swift in Sources */,
 				248B1D6E2899084800AF59F8 /* TranslateViewController.swift in Sources */,
 				248B1D3A2897A26300AF59F8 /* SceneDelegate.swift in Sources */,
+				248B1D7E289914EE00AF59F8 /* Constant.swift in Sources */,
 				248B1D582897C75200AF59F8 /* RandomBeerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,7 +472,7 @@
 				INFOPLIST_FILE = "sesac-networkBasic/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = BeerList;
+				INFOPLIST_KEY_UIMainStoryboardFile = Translate;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -488,7 +500,7 @@
 				INFOPLIST_FILE = "sesac-networkBasic/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = BeerList;
+				INFOPLIST_KEY_UIMainStoryboardFile = Translate;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -49,7 +49,7 @@ class SearchViewController: UIViewController {
     
     private func requestBoxOffice(text: String) {
         list.removeAll()
-        let url = "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=02fbf6622352a47fb2969197a090a8df&targetDt=\(text)"
+        let url = "\(EndPoint.boxOfficeURL)key=\(APIKey.BOXOFFICE)&targetDt=\(text)"
         AF.request(url, method: .get).validate().responseJSON { response in
             switch response.result {
             case .success(let value):

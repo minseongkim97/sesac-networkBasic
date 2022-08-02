@@ -18,6 +18,11 @@
 		248B1D562897C74700AF59F8 /* RandomBeer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248B1D552897C74700AF59F8 /* RandomBeer.storyboard */; };
 		248B1D582897C75200AF59F8 /* RandomBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248B1D572897C75200AF59F8 /* RandomBeerViewController.swift */; };
 		248B1D5B2897CCF200AF59F8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 248B1D5A2897CCF200AF59F8 /* Kingfisher */; };
+		248B1D5E2898AC9100AF59F8 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248B1D5D2898AC9100AF59F8 /* SearchViewController.swift */; };
+		248B1D612898FB3D00AF59F8 /* Movie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248B1D602898FB3D00AF59F8 /* Movie.storyboard */; };
+		248B1D642898FC0E00AF59F8 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248B1D622898FC0E00AF59F8 /* SearchTableViewCell.swift */; };
+		248B1D652898FC0E00AF59F8 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248B1D632898FC0E00AF59F8 /* SearchTableViewCell.xib */; };
+		248B1D68289900DF00AF59F8 /* BoxOfficeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248B1D67289900DF00AF59F8 /* BoxOfficeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 		248B1D452897A26500AF59F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		248B1D552897C74700AF59F8 /* RandomBeer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RandomBeer.storyboard; sourceTree = "<group>"; };
 		248B1D572897C75200AF59F8 /* RandomBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomBeerViewController.swift; sourceTree = "<group>"; };
+		248B1D5D2898AC9100AF59F8 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		248B1D602898FB3D00AF59F8 /* Movie.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Movie.storyboard; sourceTree = "<group>"; };
+		248B1D622898FC0E00AF59F8 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		248B1D632898FC0E00AF59F8 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		248B1D67289900DF00AF59F8 /* BoxOfficeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,7 @@
 		248B1D362897A26300AF59F8 /* sesac-networkBasic */ = {
 			isa = PBXGroup;
 			children = (
+				248B1D5C2898AC8200AF59F8 /* Movie */,
 				248B1D532897C73000AF59F8 /* RandomBeer */,
 				248B1D4B2897A2B800AF59F8 /* Lotto */,
 				248B1D372897A26300AF59F8 /* AppDelegate.swift */,
@@ -109,6 +120,34 @@
 				248B1D552897C74700AF59F8 /* RandomBeer.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		248B1D5C2898AC8200AF59F8 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				248B1D66289900D100AF59F8 /* Model */,
+				248B1D5F2898FB2C00AF59F8 /* Storyboard */,
+				248B1D5D2898AC9100AF59F8 /* SearchViewController.swift */,
+				248B1D622898FC0E00AF59F8 /* SearchTableViewCell.swift */,
+				248B1D632898FC0E00AF59F8 /* SearchTableViewCell.xib */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		248B1D5F2898FB2C00AF59F8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				248B1D602898FB3D00AF59F8 /* Movie.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		248B1D66289900D100AF59F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				248B1D67289900DF00AF59F8 /* BoxOfficeModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,10 +218,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				248B1D612898FB3D00AF59F8 /* Movie.storyboard in Resources */,
 				248B1D442897A26500AF59F8 /* LaunchScreen.storyboard in Resources */,
 				248B1D412897A26500AF59F8 /* Assets.xcassets in Resources */,
 				248B1D3F2897A26300AF59F8 /* Main.storyboard in Resources */,
 				248B1D562897C74700AF59F8 /* RandomBeer.storyboard in Resources */,
+				248B1D652898FC0E00AF59F8 /* SearchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,8 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				248B1D5E2898AC9100AF59F8 /* SearchViewController.swift in Sources */,
 				248B1D3C2897A26300AF59F8 /* LottoViewController.swift in Sources */,
 				248B1D382897A26300AF59F8 /* AppDelegate.swift in Sources */,
+				248B1D68289900DF00AF59F8 /* BoxOfficeModel.swift in Sources */,
+				248B1D642898FC0E00AF59F8 /* SearchTableViewCell.swift in Sources */,
 				248B1D3A2897A26300AF59F8 /* SceneDelegate.swift in Sources */,
 				248B1D582897C75200AF59F8 /* RandomBeerViewController.swift in Sources */,
 			);
@@ -348,7 +392,7 @@
 				INFOPLIST_FILE = "sesac-networkBasic/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = RandomBeer;
+				INFOPLIST_KEY_UIMainStoryboardFile = Movie;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -376,7 +420,7 @@
 				INFOPLIST_FILE = "sesac-networkBasic/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = RandomBeer;
+				INFOPLIST_KEY_UIMainStoryboardFile = Movie;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

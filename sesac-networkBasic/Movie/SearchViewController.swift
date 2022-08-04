@@ -55,7 +55,7 @@ class SearchViewController: UIViewController {
         list.removeAll()
         
         let url = "\(EndPoint.boxOfficeURL)key=\(APIKey.BOXOFFICE)&targetDt=\(text)"
-        AF.request(url, method: .get).validate().responseJSON { [weak self] response in
+        AF.request(url, method: .get).validate().responseData { [weak self] response in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)

@@ -17,4 +17,5 @@ struct EndPoint {
     static let boxOfficeURL = "http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?"
     static let lottoURL = "https://www.dhlottery.co.kr/common.do?method=getLottoNumber"
     static let translateURL = "https://openapi.naver.com/v1/papago/n2mt"
+    static let imageSearchURL = "https://openapi.naver.com/v1/search/image?"
 }

@@ -22,7 +22,8 @@ class TranslateViewController: UIViewController {
         didSet {
             afterTextView.layer.borderColor = UIColor.black.cgColor
             afterTextView.layer.borderWidth = 1
-            afterTextView.delegate = self
+            afterTextView.isUserInteractionEnabled = false
+//            afterTextView.delegate = self
         }
     }
     

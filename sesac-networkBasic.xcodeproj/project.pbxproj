@@ -31,6 +31,11 @@
 		248B1D7828990B0600AF59F8 /* BeerListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248B1D7628990B0600AF59F8 /* BeerListTableViewCell.xib */; };
 		248B1D7B28990C0B00AF59F8 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248B1D7A28990C0B00AF59F8 /* Beer.swift */; };
 		248B1D7E289914EE00AF59F8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248B1D7D289914EE00AF59F8 /* Constant.swift */; };
+		248B1DAA289A093E00AF59F8 /* ImageSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248B1DA9289A093E00AF59F8 /* ImageSearchViewController.swift */; };
+		248B1DAD289A095900AF59F8 /* ImageSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248B1DAC289A095900AF59F8 /* ImageSearch.storyboard */; };
+		24F45DDB289B484B004F319F /* ImageSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F45DD9289B484B004F319F /* ImageSearchCollectionViewCell.swift */; };
+		24F45DDC289B484B004F319F /* ImageSearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24F45DDA289B484B004F319F /* ImageSearchCollectionViewCell.xib */; };
+		24F45DDF289B4FB9004F319F /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 24F45DDE289B4FB9004F319F /* JGProgressHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +62,10 @@
 		248B1D7628990B0600AF59F8 /* BeerListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerListTableViewCell.xib; sourceTree = "<group>"; };
 		248B1D7A28990C0B00AF59F8 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		248B1D7D289914EE00AF59F8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		248B1DA9289A093E00AF59F8 /* ImageSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchViewController.swift; sourceTree = "<group>"; };
+		248B1DAC289A095900AF59F8 /* ImageSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageSearch.storyboard; sourceTree = "<group>"; };
+		24F45DD9289B484B004F319F /* ImageSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		24F45DDA289B484B004F319F /* ImageSearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageSearchCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F45DDF289B4FB9004F319F /* JGProgressHUD in Frameworks */,
 				248B1D5B2897CCF200AF59F8 /* Kingfisher in Frameworks */,
 				248B1D512897C3EE00AF59F8 /* SwiftyJSON in Frameworks */,
 				248B1D4E2897C3E000AF59F8 /* Alamofire in Frameworks */,
@@ -93,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				248B1D7C289914E500AF59F8 /* Constant */,
+				248B1DA8289A08FB00AF59F8 /* ImageSearch */,
 				248B1D6F2899090600AF59F8 /* BeerList */,
 				248B1D692899082B00AF59F8 /* Translate */,
 				248B1D5C2898AC8200AF59F8 /* Movie */,
@@ -222,6 +233,25 @@
 			path = Constant;
 			sourceTree = "<group>";
 		};
+		248B1DA8289A08FB00AF59F8 /* ImageSearch */ = {
+			isa = PBXGroup;
+			children = (
+				248B1DAB289A095000AF59F8 /* Storyboard */,
+				248B1DA9289A093E00AF59F8 /* ImageSearchViewController.swift */,
+				24F45DD9289B484B004F319F /* ImageSearchCollectionViewCell.swift */,
+				24F45DDA289B484B004F319F /* ImageSearchCollectionViewCell.xib */,
+			);
+			path = ImageSearch;
+			sourceTree = "<group>";
+		};
+		248B1DAB289A095000AF59F8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				248B1DAC289A095900AF59F8 /* ImageSearch.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,6 +272,7 @@
 				248B1D4D2897C3E000AF59F8 /* Alamofire */,
 				248B1D502897C3EE00AF59F8 /* SwiftyJSON */,
 				248B1D5A2897CCF200AF59F8 /* Kingfisher */,
+				24F45DDE289B4FB9004F319F /* JGProgressHUD */,
 			);
 			productName = "sesac-networkBasic";
 			productReference = 248B1D342897A26300AF59F8 /* sesac-networkBasic.app */;
@@ -275,6 +306,7 @@
 				248B1D4C2897C3E000AF59F8 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				248B1D4F2897C3EE00AF59F8 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				248B1D592897CCF200AF59F8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				24F45DDD289B4FB9004F319F /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
 			);
 			productRefGroup = 248B1D352897A26300AF59F8 /* Products */;
 			projectDirPath = "";
@@ -290,12 +322,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F45DDC289B484B004F319F /* ImageSearchCollectionViewCell.xib in Resources */,
 				248B1D6C2899083A00AF59F8 /* Translate.storyboard in Resources */,
 				248B1D612898FB3D00AF59F8 /* Movie.storyboard in Resources */,
 				248B1D442897A26500AF59F8 /* LaunchScreen.storyboard in Resources */,
 				248B1D412897A26500AF59F8 /* Assets.xcassets in Resources */,
 				248B1D712899092200AF59F8 /* BeerList.storyboard in Resources */,
 				248B1D3F2897A26300AF59F8 /* Main.storyboard in Resources */,
+				248B1DAD289A095900AF59F8 /* ImageSearch.storyboard in Resources */,
 				248B1D7828990B0600AF59F8 /* BeerListTableViewCell.xib in Resources */,
 				248B1D562897C74700AF59F8 /* RandomBeer.storyboard in Resources */,
 				248B1D652898FC0E00AF59F8 /* SearchTableViewCell.xib in Resources */,
@@ -312,6 +346,7 @@
 				248B1D5E2898AC9100AF59F8 /* SearchViewController.swift in Sources */,
 				248B1D7728990B0600AF59F8 /* BeerListTableViewCell.swift in Sources */,
 				248B1D3C2897A26300AF59F8 /* LottoViewController.swift in Sources */,
+				248B1DAA289A093E00AF59F8 /* ImageSearchViewController.swift in Sources */,
 				248B1D7B28990C0B00AF59F8 /* Beer.swift in Sources */,
 				248B1D382897A26300AF59F8 /* AppDelegate.swift in Sources */,
 				248B1D742899093800AF59F8 /* BeerListViewController.swift in Sources */,
@@ -320,6 +355,7 @@
 				248B1D6E2899084800AF59F8 /* TranslateViewController.swift in Sources */,
 				248B1D3A2897A26300AF59F8 /* SceneDelegate.swift in Sources */,
 				248B1D7E289914EE00AF59F8 /* Constant.swift in Sources */,
+				24F45DDB289B484B004F319F /* ImageSearchCollectionViewCell.swift in Sources */,
 				248B1D582897C75200AF59F8 /* RandomBeerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,7 +508,7 @@
 				INFOPLIST_FILE = "sesac-networkBasic/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Translate;
+				INFOPLIST_KEY_UIMainStoryboardFile = ImageSearch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,7 +536,7 @@
 				INFOPLIST_FILE = "sesac-networkBasic/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Translate;
+				INFOPLIST_KEY_UIMainStoryboardFile = ImageSearch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -564,6 +600,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		24F45DDD289B4FB9004F319F /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -581,6 +625,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 248B1D592897CCF200AF59F8 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		24F45DDE289B4FB9004F319F /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 24F45DDD289B4FB9004F319F /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

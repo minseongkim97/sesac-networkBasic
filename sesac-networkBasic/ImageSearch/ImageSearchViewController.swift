@@ -20,7 +20,9 @@ class ImageSearchViewController: UIViewController {
     var totalCount = 0
     var list: [String] = [] {
         didSet {
-            imageSearchCollectionView.reloadData()
+            DispatchQueue.main.async {
+                self.imageSearchCollectionView.reloadData()
+            }
         }
     }
     
@@ -46,33 +48,12 @@ class ImageSearchViewController: UIViewController {
     }
     
     //MARK: - Helpers
-    // fetch, request, callRequest, getImage ...> response에 따라 네이밍을 설정해주기도 함
     func fetchImage(query: String) {
-        hud.show(in: self.view)
-        // UTF-8로 인코딩한다. 한글 인코딩
-        let text = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
-        let url = EndPoint.imageSearchURL + "query=\(text)&display=30&start=\(startPage)"
-        
-        let header: HTTPHeaders = ["X-Naver-Client-Id": APIKey.NAVER_ID, "X-Naver-Client-Secret": APIKey.NAVER_SECRET]
-        
-        AF.request(url, method: .get, headers: header).validate(statusCode: 200...500).responseData { [weak self] response in
-            switch response.result {
-            case .success(let value):
-                let json = JSON(value)
-                print(json["start"].intValue)
-                
-                self?.totalCount = json["total"].intValue
-                
-                for item in json["items"].arrayValue {
-                    self?.list.append(item["link"].stringValue)
-                }
-                
-                self?.hud.dismiss()
-                
-            case .failure(let error):
-                self?.hud.dismiss()
-                print(error)
-            }
+        self.hud.show(in: self.view)
+        ImageSearchAPIManager.shared.fetchImage(query: query, startPage: startPage) { [weak self] totalCount, list in
+            self?.totalCount = totalCount
+            self?.list.append(contentsOf: list)
+            self?.hud.dismiss()
         }
     }
     

@@ -36,6 +36,7 @@
 		24F45DDB289B484B004F319F /* ImageSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F45DD9289B484B004F319F /* ImageSearchCollectionViewCell.swift */; };
 		24F45DDC289B484B004F319F /* ImageSearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24F45DDA289B484B004F319F /* ImageSearchCollectionViewCell.xib */; };
 		24F45DDF289B4FB9004F319F /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 24F45DDE289B4FB9004F319F /* JGProgressHUD */; };
+		24F45DFA289CB3F5004F319F /* ImageSearchAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F45DF9289CB3F5004F319F /* ImageSearchAPIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		248B1DAC289A095900AF59F8 /* ImageSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageSearch.storyboard; sourceTree = "<group>"; };
 		24F45DD9289B484B004F319F /* ImageSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		24F45DDA289B484B004F319F /* ImageSearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageSearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		24F45DF9289CB3F5004F319F /* ImageSearchAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchAPIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 		248B1DA8289A08FB00AF59F8 /* ImageSearch */ = {
 			isa = PBXGroup;
 			children = (
+				24F45DF8289CB3D9004F319F /* APIManager */,
 				248B1DAB289A095000AF59F8 /* Storyboard */,
 				248B1DA9289A093E00AF59F8 /* ImageSearchViewController.swift */,
 				24F45DD9289B484B004F319F /* ImageSearchCollectionViewCell.swift */,
@@ -250,6 +253,14 @@
 				248B1DAC289A095900AF59F8 /* ImageSearch.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		24F45DF8289CB3D9004F319F /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				24F45DF9289CB3F5004F319F /* ImageSearchAPIManager.swift */,
+			);
+			path = APIManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +361,7 @@
 				248B1D7B28990C0B00AF59F8 /* Beer.swift in Sources */,
 				248B1D382897A26300AF59F8 /* AppDelegate.swift in Sources */,
 				248B1D742899093800AF59F8 /* BeerListViewController.swift in Sources */,
+				24F45DFA289CB3F5004F319F /* ImageSearchAPIManager.swift in Sources */,
 				248B1D68289900DF00AF59F8 /* BoxOfficeModel.swift in Sources */,
 				248B1D642898FC0E00AF59F8 /* SearchTableViewCell.swift in Sources */,
 				248B1D6E2899084800AF59F8 /* TranslateViewController.swift in Sources */,
